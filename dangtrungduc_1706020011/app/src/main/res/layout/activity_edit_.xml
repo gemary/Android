@@ -27,14 +27,14 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/h_v_t_n"/>
-        <TextView
+        <EditText
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTENHOCSINH"/>
+            android:id="@+id/edt_TENHOCSINH"/>
     </LinearLayout>
 
 
@@ -51,14 +51,14 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/ng_nh"/>
-        <TextView
+        <EditText
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvNGANH"/>
+            android:id="@+id/edt_NGANH"/>
     </LinearLayout>
 
 
@@ -76,14 +76,14 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/mssv"/>
-        <TextView
+        <EditText
             android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_weight="2"
             android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMSSV"/>
+            android:id="@+id/edt_MSSV"/>
         <TextView
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -92,14 +92,14 @@
             android:layout_weight="1"
             android:text="@string/t_n_ch"
             android:layout_height="wrap_content" />
-        <TextView
+        <EditText
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/tv_TINCHI"/>
+            android:id="@+id/edt_TINCHI"/>
     </LinearLayout>
 
 
@@ -109,15 +109,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/t_n_m_n_h_c"
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="@string/t_n_m_n_h_c"/>
-        <TextView
+            android:textStyle="bold" />
+        <EditText
             android:gravity="left"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -125,7 +126,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTENMONHOC"/>
+            android:id="@+id/edt_TENMONHOC"/>
     </LinearLayout>
 
 
@@ -143,7 +144,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/m_m_n_h_c"/>
-        <TextView
+        <EditText
             android:gravity="left"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -151,7 +152,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvMAMONHOC"/>
+            android:id="@+id/edt_MAMONHOC"/>
     </LinearLayout>
 
 
@@ -170,7 +171,7 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/gi_ng_vi_n"/>
-        <TextView
+        <EditText
             android:gravity="left"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -178,13 +179,14 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/tvGIANGVIEN"/>
+            android:id="@+id/edt_GIANGVIEN"/>
     </LinearLayout>
     <Button
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edit"
-        android:id="@+id/btn_Edit"
-        android:background="@color/background1"/>
+        android:background="@color/background1"
+        android:text="@string/update"
+        android:id="@+id/btn_Update"/>
 </LinearLayout>

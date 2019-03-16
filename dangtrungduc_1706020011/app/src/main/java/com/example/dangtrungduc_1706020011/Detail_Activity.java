@@ -3,17 +3,24 @@ package com.example.dangtrungduc_1706020011;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Detail_Activity extends AppCompatActivity {
     TextView tv_Tsv,tv_msv,tv_nganh,tv_sochi,tv_tmh,tv_mmh,tv_tgv;
+    Button btn_edit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_);
         init();
         OngetIntent();
+
+
     }
+
+
 
     private void OngetIntent() {
         Intent intent  = getIntent();
@@ -37,5 +44,6 @@ public class Detail_Activity extends AppCompatActivity {
         tv_tgv = (TextView) findViewById(R.id.tvGIANGVIEN);
         tv_Tsv = (TextView) findViewById(R.id.tvTENHOCSINH);
         tv_tmh = (TextView) findViewById(R.id.tvTENMONHOC);
+        btn_edit = (Button) findViewById(R.id.btn_Edit);
     }
 }

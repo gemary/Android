@@ -24,8 +24,10 @@
             android:layout_height="wrap_content"
             android:text="@string/danh_s_ch_m_n_h_c"/>
     </LinearLayout>
+
     <ListView
+        android:id="@+id/lv_show"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lv_show"></ListView>
+        android:layout_height="match_parent"></ListView>
+
 </LinearLayout>

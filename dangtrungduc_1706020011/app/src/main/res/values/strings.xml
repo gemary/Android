@@ -14,5 +14,7 @@
     <string name="ng_nh">Ngành:</string>
     <string name="t_n_ch">Tín Chỉ:</string>
     <string name="mssv">MSSV:</string>
+    <string name="update">Update</string>
+    <string name="edit">Edit</string>
 
 </resources>

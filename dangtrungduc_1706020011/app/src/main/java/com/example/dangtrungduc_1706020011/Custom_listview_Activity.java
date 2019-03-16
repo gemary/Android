@@ -1,8 +1,11 @@
 package com.example.dangtrungduc_1706020011;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -14,6 +17,7 @@ import java.util.ListIterator;
 
 public class Custom_listview_Activity extends AppCompatActivity {
     ImageView btn_back;
+    Button btn_edit;
     ListView lv_show;
    static adapter_Mh adapter;
    static ArrayList<Mh_model> modelList;
@@ -25,7 +29,18 @@ public class Custom_listview_Activity extends AppCompatActivity {
         setdata();
 
         adapter = new adapter_Mh(Custom_listview_Activity.this,R.layout.custom,modelList);
+        lv_show.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               Mh_model model = (Mh_model) lv_show.getItemAtPosition(position);
 
+                Intent intent = new Intent(Custom_listview_Activity.this,Edit_Activity.class);
+                intent.putExtra("position",position);
+                intent.putExtra("model",model);
+                startActivity(intent);
+
+            }
+        });
         lv_show.setAdapter(adapter);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +48,9 @@ public class Custom_listview_Activity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
     }
 
     private void setdata() {
@@ -46,5 +64,7 @@ public class Custom_listview_Activity extends AppCompatActivity {
     private void init() {
         btn_back = (ImageView) findViewById(R.id.btnBack);
         lv_show = (ListView) findViewById(R.id.lv_show);
+        btn_edit = (Button) findViewById(R.id.btn_Edit);
+
     }
 }
