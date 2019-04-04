@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@color/MainColor"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:text="@string/update"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/product"
+            android:id="@+id/edt_product"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:inputType="numberDecimal"
+            android:hint="@string/cost"
+            android:id="@+id/edt_cost"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/local"
+            android:id="@+id/edt_local"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/note"
+            android:id="@+id/edt_note"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/currency"
+            android:id="@+id/edt_currency"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/reason"
+            android:id="@+id/edt_reason"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textColor="@color/MainColor"
+            android:hint="@string/date_time"
+            android:id="@+id/edt_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <ImageButton
+            android:id="@+id/btn_time_dialog"
+            android:layout_width="4dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/calendar" />
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <ImageButton
+           android:padding="5dp"
+           android:background="@color/white"
+           android:id="@+id/btn_Un_submit"
+           android:src="@drawable/unchceck"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="50dp"
+           />
+       <ImageButton
+           android:padding="5dp"
+           android:background="@color/white"
+           android:id="@+id/btn_submit"
+           android:src="@drawable/checked"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+
+   </LinearLayout>
+</LinearLayout>
