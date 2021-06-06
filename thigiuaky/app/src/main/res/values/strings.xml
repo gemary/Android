@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">thigiuaky</string>
-    <string name="user_name">User Name</string>
-    <string name="pass_word">Pass Word</string>
-    <string name="login">Login</string>
-    <string name="click">click</string>
-    <string name="price">Price:</string>
-</resources>

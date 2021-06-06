@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:repeatMode="reverse" android:shareInterpolator="true">
+
+<translate
+    android:fromXDelta="2"
+    android:fromYDelta="2"
+    android:toXDelta="8"
+    android:toYDelta="8"
+    android:repeatCount="10"
+    ></translate>
+</set>
